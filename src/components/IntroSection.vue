@@ -6,9 +6,9 @@
 
         <h1 class="text-huge-title">
           I’m Mustafa Azmi, <br />
-          a full stack engineer <br />
-          crafting clean & modern <br />
-          web experiences.
+          a full stack software <br />
+          engineer crafting clean & <br />
+          modern web experiences.
         </h1>
       </div>
 

@@ -3,7 +3,7 @@ import { watch, onUnmounted } from 'vue'
 
 const props = defineProps({
   project: Object,
-  open: Boolean
+  open: Boolean,
 })
 
 const emit = defineEmits(['close'])
@@ -25,7 +25,7 @@ watch(
       document.removeEventListener('keydown', handleEsc)
     }
   },
-  { immediate: true } // <-- ensures watcher runs at mount
+  { immediate: true }, // <-- ensures watcher runs at mount
 )
 
 // Cleanup on unmount
@@ -36,9 +36,8 @@ onUnmounted(() => {
 
 <template>
   <div v-if="open" class="modal-overlay" @click.self="emit('close')">
-
     <button class="modal-close" @click="emit('close')">
-      <img src="/images/icons/icon-close.svg" alt="Close" />
+      <img src="../assets/icons/icon-close.svg" alt="Close" />
     </button>
 
     <div class="modal-popup">
@@ -53,9 +52,7 @@ onUnmounted(() => {
         </ul>
       </div>
 
-      <a :href="project.link" class="modal-popup__details" target="_blank">
-        Project link
-      </a>
+      <a :href="project.link" class="modal-popup__details" target="_blank"> Project link </a>
     </div>
   </div>
 </template>
@@ -67,7 +64,7 @@ onUnmounted(() => {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +127,7 @@ onUnmounted(() => {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url(../images/icons/icon-tag.svg);
+  background-image: url(/src/assets/icons/icon-tag.svg);
   position: absolute;
   left: 0;
   top: -0.15em;

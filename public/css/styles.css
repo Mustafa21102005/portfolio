@@ -2915,10 +2915,6 @@ img.u-pull-left {
   width: 20%;
 }
 
-.ss-preload .s-pagewrap {
-  visibility: hidden;
-}
-
 /* -------------------------------------------------------------------
  * responsive:
  * page-wrap
@@ -3456,7 +3452,8 @@ img.u-pull-left {
 }
 
 .about-expertise .skills-list li:not(:last-child)::after {
-  content: ', ';
+  content: ',';
+  margin-right: 1rem;
 }
 
 /* --------------------------------------------------------------------
@@ -4097,7 +4094,8 @@ img.u-pull-left {
 }
 
 .contact-social li::after {
-  content: ',  ';
+  content: ',';
+  margin-right: 0.4rem;
 }
 
 .contact-social li:last-child::after {

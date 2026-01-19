@@ -10,7 +10,7 @@ import IntroSection from './components/IntroSection.vue'
 <template>
   <div class="s-pagewrap">
     <AppHeader />
-    <main class="s-content">
+    <main>
       <IntroSection />
       <AboutSection />
       <ProjectSection />

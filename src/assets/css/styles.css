@@ -40,7 +40,6 @@
  * # PROJECT-WIDE SHARED STYLES
  *      ## media classes
  *      ## theme-specific typography classes
- *      ## MailtoUI style overrides
  * # PAGE WRAP
  *      ## circles
  * # SITE HEADER
@@ -79,9 +78,7 @@
 :root {
   --font-1: 'Public Sans', sans-serif;
   --font-2: 'DM Serif Display', serif;
-
-  /* monospace
-    */
+  /* monospace */
   --font-mono: Consolas, 'Andale Mono', Courier, 'Courier New', monospace;
 }
 
@@ -2667,133 +2664,6 @@ img.u-pull-left {
 }
 
 /* -------------------------------------------------------------------
- * ## MailtoUI style overrides
- * ------------------------------------------------------------------- */
-.mailtoui-modal {
-  --mailtoui-modal-box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08), 0 4px 4px rgba(0, 0, 0, 0.08),
-    0 8px 8px rgba(0, 0, 0, 0.08);
-  --mailtoui-modal-head-bgcolor: var(--color-gray-18);
-  --mailtoui-modal-head-title-color: white;
-  --mailtoui-modal-body-bgcolor: var(--color-gray-11);
-  --mailtoui-button-bgcolor: rgba(255, 255, 255, 0.04);
-  --mailtoui-button-text-color: white;
-  --mailtoui-button-bgcolor-hover: var(--color-1-dark);
-  --mailtoui-button-text-color-hover: black;
-  --mailtoui-button-text-size: 16px;
-  --mailtoui-email-address-bgcolor: var(--color-gray-13);
-  --mailtoui-email-address-text-color: var(--text-color);
-  --border-radius: 0;
-  font-family: var(--font-1);
-  background-color: var(--color-body);
-  color: white;
-}
-
-.mailtoui-modal-content {
-  background-color: var(--mailtoui-modal-body-bgcolor);
-  border-radius: var(--border-radius);
-  box-shadow: var(--mailtoui-modal-box-shadow);
-}
-
-.mailtoui-modal-content button {
-  font-weight: 400;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.mailtoui-modal-head {
-  background-color: var(--mailtoui-modal-head-bgcolor);
-}
-
-.mailtoui-modal-title {
-  font-family: var(--font-1);
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--mailtoui-modal-head-title-color);
-}
-
-.mailtoui-modal-close {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  font-size: 32px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.mailtoui-modal-close:hover,
-.mailtoui-modal-close:focus {
-  color: white;
-  font-weight: 300;
-}
-
-.mailtoui-modal-body {
-  background-color: var(--mailtoui-modal-body-bgcolor);
-}
-
-.mailtoui-button-text {
-  font-size: var(--mailtoui-button-text-size);
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.mailtoui-button:focus .mailtoui-button-content {
-  background-color: var(--mailtoui-button-bgcolor-hover);
-  color: var(--mailtoui-button-text-color-hover);
-}
-
-.mailtoui-button-content,
-.mailtoui-button-copy {
-  background-color: var(--mailtoui-button-bgcolor);
-  color: var(--mailtoui-button-text-color);
-  border-radius: var(--border-radius);
-  box-shadow: none;
-}
-
-.mailtoui-button-content:hover,
-.mailtoui-button-content:focus,
-.mailtoui-button-copy:hover,
-.mailtoui-button-copy:focus {
-  background-color: var(--mailtoui-button-bgcolor-hover);
-  color: var(--mailtoui-button-text-color-hover);
-}
-
-.mailtoui-copy {
-  border-radius: var(--border-radius);
-  box-shadow: none;
-}
-
-.mailtoui-button-icon-copy {
-  line-height: var(--vspace-1);
-}
-
-.mailtoui-button-copy-clicked,
-.mailtoui-button-copy-clicked:hover,
-.mailtoui-button-copy-clicked:focus {
-  background-color: #1f9d55;
-  color: white;
-}
-
-.mailtoui-email-address {
-  background-color: var(--mailtoui-email-address-bgcolor);
-  color: var(--mailtoui-email-address-text-color);
-  font-size: 16px;
-  line-height: 1;
-  border-radius: var(--border-radius);
-}
-
-.mailtoui-brand a {
-  color: rgba(255, 255, 255, 0.12);
-}
-
-.mailtoui-brand a:focus,
-.mailtoui-brand a:hover {
-  font-weight: 300;
-  color: white;
-}
-
-/* -------------------------------------------------------------------
  * responsive:
  * project-wide shared styles
  * ------------------------------------------------------------------- */
@@ -4017,6 +3887,10 @@ img.u-pull-left {
   padding-bottom: var(--vspace-3);
   margin-top: var(--vspace-3);
   border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10rem;
+  row-gap: 2rem;
 }
 
 .contact-bottom .text-pretitle {
@@ -4054,7 +3928,8 @@ img.u-pull-left {
 }
 
 .contact-social li::after {
-  content: ',  ';
+  content: ',';
+  margin-right: 0.6rem;
 }
 
 .contact-social li:last-child::after {

@@ -376,10 +376,11 @@ pre[class*='language-'] {
   display: none;
 }
 
-/*
 :root {
-  --swiper-pagination-color: var(--swiper-theme-color);
-} */
+  /*
+    --swiper-pagination-color: var(--swiper-theme-color);
+    */
+}
 
 .swiper-pagination {
   position: absolute;
@@ -637,10 +638,12 @@ button.swiper-pagination-bullet {
 }
 
 /* Preloader */
-/*
+
 :root {
-  --swiper-preloader-color: var(--swiper-theme-color);
-} */
+  /*
+    --swiper-preloader-color: var(--swiper-theme-color);
+    */
+}
 
 .swiper-lazy-preloader {
   width: 42px;
@@ -818,7 +821,7 @@ button.swiper-pagination-bullet {
   right: 1.8rem;
   width: 2em;
   height: 2em;
-  background: url(../images/icons/icon-close.svg);
+  background: url(../icons/icon-close.svg);
   background-position: center;
   background-size: 1.8rem 1.8rem;
   background-repeat: no-repeat;

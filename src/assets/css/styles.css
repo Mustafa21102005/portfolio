@@ -1612,7 +1612,7 @@ hr.fancy::before {
   background-repeat: no-repeat;
   background: center center;
   background-size: contain;
-  background-image: url(../images/icons/icon-quote.svg);
+  background-image: url(../icons/icon-quote.svg);
   transform: translate(-50%, 0, 0);
   position: absolute;
   top: var(--vspace-1);
@@ -2915,6 +2915,10 @@ img.u-pull-left {
   width: 20%;
 }
 
+.ss-preload .s-pagewrap {
+  visibility: hidden;
+}
+
 /* -------------------------------------------------------------------
  * responsive:
  * page-wrap
@@ -3452,8 +3456,7 @@ img.u-pull-left {
 }
 
 .about-expertise .skills-list li:not(:last-child)::after {
-  content: ',';
-  margin-right: 1rem;
+  content: ', ';
 }
 
 /* --------------------------------------------------------------------
@@ -3819,7 +3822,7 @@ img.u-pull-left {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url(../images/icons/icon-tag.svg);
+  background-image: url(../icons/icon-tag.svg);
   position: absolute;
   left: 0;
   top: -0.15em;
@@ -4094,8 +4097,7 @@ img.u-pull-left {
 }
 
 .contact-social li::after {
-  content: ',';
-  margin-right: 0.4rem;
+  content: ',  ';
 }
 
 .contact-social li:last-child::after {

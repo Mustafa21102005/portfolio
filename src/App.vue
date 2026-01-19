@@ -19,5 +19,3 @@ import IntroSection from './components/IntroSection.vue'
     <AppFooter />
   </div>
 </template>
-
-<style scoped></style>

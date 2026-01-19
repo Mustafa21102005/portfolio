@@ -3412,7 +3412,8 @@ img.u-pull-left {
 }
 
 .about-expertise .skills-list li:not(:last-child)::after {
-  content: ', ';
+  content: ',';
+  margin-right: 1rem;
 }
 
 /* --------------------------------------------------------------------

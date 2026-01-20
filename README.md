@@ -1,44 +1,72 @@
-# Portfolio
+# 🌐 Mustafa Azmi — Portfolio Website
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern, responsive **personal portfolio website** built with **Vue 3**.
+This project showcases my recent work, technical skills, and experience as a **Full-Stack Developer**, with a strong focus on clean UI, accessibility, and smooth user interactions.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🔗 Check It Out!
 
-## Recommended Browser Setup
+👉 **Live Demo:**
+https://mustafa-azmi-portfolio.netlify.app/
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Explore the portfolio directly in your browser.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ Features
 
-## Project Setup
+- 🧩 Modular Vue 3 components using the Composition API
+- 🎨 Clean, modern, and responsive UI
+- 🖼️ Project gallery with interactive cards
+- 🔍 Accessible project modal with keyboard support (ESC, focus-friendly)
+- 🎬 Smooth section reveal animations on scroll
+- 🧭 Scroll-spy navigation highlighting active sections
 
-```sh
+---
+
+## 🛠️ Tech Stack
+
+- **Vue 3** (Composition API)
+- **Vite**
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
+- **Intersection Observer API**
+- **Netlify** (deployment)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/Mustafa21102005/portfolio.git
+```
+
+### 2. Install Dependencies
+
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Run The Development Server
 
-```sh
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 🎉 You're Ready to Go!
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## 📧 Author
 
-```sh
-npm run lint
-```
+**Mustafa Azmi Khalil**
+
+📬 [Email Me](mailto:mustafa.azmi.khalil@gmail.com)
+
+- 💬 [WhatsApp](https://wa.me/966545117570)
+- 👾 [Reddit](https://www.reddit.com/user/mustafa_azmi)
+
+Please feel free to star ⭐ this repo if you find it useful!

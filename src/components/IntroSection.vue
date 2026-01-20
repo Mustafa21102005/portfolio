@@ -1,5 +1,11 @@
+<script setup>
+import { useReveal } from '@/composables/useReveal'
+
+useReveal()
+</script>
+
 <template>
-  <section id="intro" class="s-intro">
+  <section id="intro" class="s-intro reveal">
     <div class="row intro-content wide">
       <div class="column">
         <div class="text-pretitle with-line">Hello World</div>

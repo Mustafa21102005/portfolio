@@ -3,9 +3,6 @@ import { ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
 import ProjectModal from './ProjectModal.vue'
 import { projects } from '@/data/projects'
-import { useReveal } from '@/composables/useReveal'
-
-useReveal()
 
 const selectedProject = ref(null)
 
@@ -19,7 +16,7 @@ const closeModal = () => {
 </script>
 
 <template>
-  <section id="works" class="s-works reveal">
+  <section id="works" class="s-works">
     <div class="row">
       <div class="column lg-12">
         <h2 class="text-pretitle">Recent Works</h2>

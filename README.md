@@ -20,7 +20,6 @@ Explore the portfolio directly in your browser.
 - 🎨 Clean, modern, and responsive UI
 - 🖼️ Project gallery with interactive cards
 - 🔍 Accessible project modal with keyboard support (ESC, focus-friendly)
-- 🎬 Smooth section reveal animations on scroll
 - 🧭 Scroll-spy navigation highlighting active sections
 
 ---

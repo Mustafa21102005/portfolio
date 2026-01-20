@@ -1,11 +1,5 @@
-<script setup>
-import { useReveal } from '@/composables/useReveal'
-
-useReveal()
-</script>
-
 <template>
-  <section id="about" class="s-about reveal">
+  <section id="about" class="s-about">
     <div class="row about-info wide">
       <div class="column lg-6 md-12">
         <img src="/images/about-image.png" alt="Mustafa" title="Mustafa" class="about-info__pic" />

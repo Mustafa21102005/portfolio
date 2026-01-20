@@ -1,11 +1,5 @@
-<script setup>
-import { useReveal } from '@/composables/useReveal'
-
-useReveal()
-</script>
-
 <template>
-  <section id="contact" class="reveal">
+  <section id="contact">
     <div class="row contact-top">
       <div class="column lg-12">
         <h2 class="text-pretitle">Get In Touch</h2>

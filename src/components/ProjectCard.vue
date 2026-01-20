@@ -1,6 +1,14 @@
 <script setup>
 defineProps({
-  project: Object
+  project: {
+    type: Object,
+    required: true,
+    validator(p) {
+      return (
+        typeof p.title === 'string' && typeof p.image === 'string' && typeof p.category === 'string'
+      )
+    },
+  },
 })
 
 const emit = defineEmits(['open'])
@@ -8,9 +16,11 @@ const emit = defineEmits(['open'])
 
 <template>
   <li class="folio-list__item column">
-    <a class="folio-list__item-link" href="#" @click.prevent="emit('open', project)">
+    <a class="folio-list__item-link" href="#" role="button" @click.prevent="emit('open', project)"
+      @keydown.enter.prevent="emit('open', project)" @keydown.space.prevent="emit('open', project)"
+      :aria-label="`Open project ${project.title}`">
       <div class="folio-list__item-pic">
-        <img :src="project.image" :alt="project.title" />
+        <img :src="project.image" :alt="project.title" loading="lazy" />
       </div>
 
       <div class="folio-list__item-text">

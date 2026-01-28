@@ -7,8 +7,8 @@ This project showcases my recent work, technical skills, and experience as a **F
 
 ## 🔗 Check It Out!
 
-👉 **Live:**
-https://mustafa-azmi-portfolio.netlify.app/
+👉 **Live Demo:**
+https://mustafa-azmi.netlify.app/
 
 Explore the portfolio directly in your browser.
 

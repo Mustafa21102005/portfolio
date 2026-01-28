@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mustafa-azmi.netlify.app/sitemap.xml

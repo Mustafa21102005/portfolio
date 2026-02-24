@@ -16,7 +16,10 @@
             Passionate about clean architecture, problem-solving, and creating smooth user
             experiences.
           </p>
-          <a href="/files/Mustafa-Azmi-Resume.pdf" download class="btn btn--medium u-fullwidth">Download CV</a>
+          <a href="https://drive.google.com/file/d/1OZQxgEyx_McHG7R7a-LR96cBsItOv-bp/view"
+            class="btn btn--medium u-fullwidth">
+            Download CV
+          </a>
         </div>
       </div>
     </div>

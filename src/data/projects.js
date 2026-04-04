@@ -38,4 +38,14 @@ export const projects = [
     tags: ['Laravel', 'Hotel', 'Reservation'],
     link: 'https://github.com/Mustafa21102005/book-my-hotel',
   },
+  {
+    id: 5,
+    title: 'Maillard',
+    category: 'Website',
+    image: '/images/maillard.png',
+    description:
+      'A full-featured restaurant reservation web application built using Laravel, with role-based access for Admin and Customers. The system allows customers to reserve tables, receive reservation reminders, manage their profiles, and view a dynamic menu. Admins can manage reservations, tables, users, and menu items.',
+    tags: ['Laravel', 'Restaurant', 'Reservation'],
+    link: 'https://github.com/Mustafa21102005/restaurant-reservation-system',
+  },
 ]

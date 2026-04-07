@@ -16,8 +16,8 @@
             Passionate about clean architecture, problem-solving, and creating smooth user
             experiences.
           </p>
-          <a href="https://drive.google.com/file/d/1OZQxgEyx_McHG7R7a-LR96cBsItOv-bp/view"
-            class="btn btn--medium u-fullwidth">
+          <a href="https://drive.google.com/file/d/1BcTTYmLyuZTuMii_YGugOfCxRKfbpa--/view"
+            class="btn btn--medium u-fullwidth" target="_blank">
             Download CV
           </a>
         </div>

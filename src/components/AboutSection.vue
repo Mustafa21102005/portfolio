@@ -7,16 +7,11 @@
 
       <div class="column lg-6 md-12">
         <div class="about-info__text">
-          <h2 class="text-pretitle with-line">About</h2>
+          <h2 class="text-pretitle with-line">{{ $t('about.title') }}</h2>
           <p class="attention-getter">
-            I’m Mustafa Azmi Khalil, a Full Stack Software Engineer based in Riyadh, Saudi Arabia. I
-            build responsive, scalable web applications using Laravel, PHP, MySQL, JavaScript, Vue,
-            Bootstrap, and Tailwind CSS. I have hands-on experience developing systems for
-            education, task management, booking platforms, and QR-based attendance solutions.
-            Passionate about clean architecture, problem-solving, and creating smooth user
-            experiences.
+            {{ $t('about.description') }}
           </p>
-          <p class="cv-split__hint">Want my CV? Pick your language 😉</p>
+          <p class="cv-split__hint">{{ $t('about.cv') }}</p>
           <div class="cv-split">
             <a
               href="https://drive.google.com/file/d/1BcTTYmLyuZTuMii_YGugOfCxRKfbpa--/view"
@@ -28,7 +23,7 @@
             </a>
             <a
               href="https://drive.google.com/file/d/1Bp_EGaCgLyLPQRijJN25rOf5gqd2AfA8/view"
-              class="btn text-large cv-split__btn cv-split__btn--right"
+              class="btn cv-split__btn cv-split__btn--right"
               target="_blank"
               aria-label="تحميل السيرة الذاتية باللغة العربية"
             >
@@ -41,37 +36,43 @@
 
     <div class="row about-expertise">
       <div class="column lg-12">
-        <h2 class="text-pretitle">Expertise</h2>
+        <h2 class="text-pretitle">{{ $t('about.expertise') }}</h2>
 
         <ul class="skills-list h1">
           <li>Full Stack Web Development</li>
+          <br />
+          <li>Figma & UI/UX Design</li>
+          <br />
           <li>Laravel & PHP</li>
-          <li>JavaScript & Vue.js</li>
+          <br />
+          <li>JavaScript & jQuery & Vue.js</li>
+          <br />
           <li>MySQL & Database Design</li>
+          <br />
           <li>Bootstrap & Tailwind CSS</li>
+          <br />
           <li>Agile & Problem Solving</li>
+          <br />
+          <li>API & Postman</li>
         </ul>
       </div>
     </div>
 
     <div class="row about-timelines">
       <div class="column lg-6 tab-12">
-        <h2 class="text-pretitle">Education</h2>
+        <h2 class="text-pretitle">{{ $t('about.education') }}</h2>
 
         <div class="timeline">
           <div class="timeline__block">
             <div class="timeline__bullet"></div>
             <div>
               <h4 class="timeline__title">ABC Horizon Academy</h4>
-              <h5 class="timeline__meta">International Level 3 Subsidiary Diploma</h5>
-              <p class="timeline__timeframe">December 2022 - June 2023</p>
+              <h5 class="timeline__meta">{{ $t('about.subsidiary') }}</h5>
+              <p class="timeline__timeframe">{{ $t('about.subsidiary_date') }}</p>
             </div>
             <div>
               <p>
-                Completed a Pearson BTEC Level 3 Diploma in Applied Science, an internationally
-                recognized qualification equivalent to a high school diploma. The program provided a
-                strong foundation in applied scientific principles, covering biology, chemistry, and
-                physics.
+                {{ $t('about.subsidiary_description') }}
               </p>
             </div>
           </div>
@@ -80,14 +81,12 @@
             <div class="timeline__bullet"></div>
             <div>
               <h4 class="timeline__title">ABC Horizon Academy</h4>
-              <h5 class="timeline__meta">Level 5 Higher National Diploma</h5>
-              <p class="timeline__timeframe">Septemer 2023 - January 2025</p>
+              <h5 class="timeline__meta">{{ $t('about.diploma') }}</h5>
+              <p class="timeline__timeframe">{{ $t('about.diploma_date') }}</p>
             </div>
             <div>
               <p>
-                Studied Software Engineering with a focus on modern software development principles
-                and practices. The program emphasized problem-solving, programming fundamentals,
-                system design, and the development of scalable applications.
+                {{ $t('about.diploma_description') }}
               </p>
             </div>
           </div>
@@ -97,19 +96,16 @@
             <div>
               <h4 class="timeline__title">
                 University of Bolton
-                <small class="timeline__note"
-                  >(Transitioning to University of Greater Manchester)</small
-                >
+                <small class="timeline__note">
+                  {{ $t('about.university_transition') }}
+                </small>
               </h4>
-              <h5 class="timeline__meta">Software Engineering BEng (Hons) HE6 top-up</h5>
-              <p class="timeline__timeframe">June 2025 - December 2025</p>
+              <h5 class="timeline__meta">{{ $t('about.bachelor') }}</h5>
+              <p class="timeline__timeframe">{{ $t('about.bachelor_date') }}</p>
             </div>
             <div>
               <p>
-                Pursuing a BEng (Hons) in Software Engineering (HE6 top-up), building upon prior
-                HND-level studies. The program focuses on advanced software development, system
-                design, and engineering principles required to build and maintain large-scale
-                software systems.
+                {{ $t('about.bachelor_description') }}
               </p>
             </div>
           </div>
@@ -129,14 +125,14 @@
   letter-spacing: 0.02em;
 }
 
-.text-large {
-  font-size: 1.5rem;
-}
-
 .cv-split {
   display: flex;
   width: 100%;
   margin-top: 1.5rem;
+}
+
+html[dir='rtl'] .cv-split {
+  flex-direction: row-reverse;
 }
 
 .cv-split__hint {
@@ -173,7 +169,18 @@
 
 /* Remove gap between them */
 .cv-split__btn + .cv-split__btn {
-  margin-left: -35px;
+  margin-inline-start: -6.3%;
+}
+
+html[dir='rtl'] .cv-split__btn + .cv-split__btn {
+  margin-inline-start: 0;
+  margin-inline-end: -6%;
+}
+
+@media (max-width: 600px) {
+  html[dir='rtl'] .cv-split__btn + .cv-split__btn {
+    margin-inline-end: -6.5%;
+  }
 }
 
 .cv-split__btn {
@@ -181,7 +188,6 @@
 }
 
 .cv-split__btn:hover {
-  transform: translateY(-2px);
   filter: brightness(1.1);
 }
 </style>

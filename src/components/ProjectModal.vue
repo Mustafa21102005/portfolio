@@ -35,25 +35,44 @@ onUnmounted(() => {
 
 <template>
   <Transition name="modal">
-    <div v-if="open" class="modal-overlay" role="dialog" aria-modal="true"
-      :aria-labelledby="`modal-title-${project.title}`" @click.self="emit('close')">
+    <div
+      v-if="open"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      :aria-labelledby="`modal-title-${project?.key}`"
+      @click.self="emit('close')"
+    >
       <button class="modal-close" @click="emit('close')" aria-label="Close modal">
-        <img src="../assets/icons/icon-close.svg" alt="Close" title="Close" />
+        <img
+          src="../assets/icons/icon-close.svg"
+          :alt="$t('work.projects.close')"
+          :title="$t('work.projects.close')"
+        />
       </button>
 
       <div class="modal-popup">
-        <img :src="project.image" :alt="project.title" />
+        <img :src="project.image" :alt="$t(`work.projects.${project.key}.title`)" />
 
         <div class="modal-popup__desc">
-          <h5 :id="`modal-title-${project.title}`">{{ project.title }}</h5>
-          <p>{{ project.description }}</p>
+          <h5 :id="`modal-title-${project.key}`">
+            {{ $t(`work.projects.${project.key}.title`) }}
+          </h5>
+          <p>{{ $t(`work.projects.${project.key}.description`) }}</p>
 
           <ul class="modal-popup__cat">
             <li v-for="tag in project.tags" :key="tag">{{ tag }}</li>
           </ul>
         </div>
 
-        <a :href="project.link" class="modal-popup__details" target="_blank" rel="noopener noreferrer">Project link</a>
+        <a
+          :href="project.link"
+          class="modal-popup__details"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $t(`work.projects.link`) }}
+        </a>
       </div>
     </div>
   </Transition>
@@ -62,8 +81,7 @@ onUnmounted(() => {
 <style scoped>
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
@@ -75,8 +93,8 @@ onUnmounted(() => {
 
 .modal-close {
   position: absolute;
-  top: 4rem;
-  right: 5rem;
+  inset-block-start: 4rem;
+  inset-inline-end: 5rem;
   background: transparent;
   border: none;
   padding: 0;

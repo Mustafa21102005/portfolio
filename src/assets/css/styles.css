@@ -2648,6 +2648,10 @@ img.u-pull-left {
   position: relative;
 }
 
+[dir='rtl'] .text-pretitle {
+  letter-spacing: 0;
+}
+
 .text-pretitle.with-line {
   color: var(--color-1);
   padding-inline-start: 6rem;

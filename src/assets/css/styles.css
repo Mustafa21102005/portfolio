@@ -35,7 +35,6 @@
  * # COMPONENTS
  *      ## pagination
  *      ## alert box
- *      ## skillbars
  *      ## stats tabs
  * # PROJECT-WIDE SHARED STYLES
  *      ## media classes
@@ -1395,6 +1394,11 @@ h6,
   letter-spacing: 0.2rem;
 }
 
+html[dir='rtl'] h6,
+html[dir='rtl'] .h6 {
+  letter-spacing: 0;
+}
+
 /* emphasis, italic,
  * strong, bold and small text
  */
@@ -1542,6 +1546,10 @@ abbr {
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: 0.1em;
+}
+
+html[dir='rtl'] abbr {
+  letter-spacing: 0;
 }
 
 abbr[title],
@@ -2387,148 +2395,6 @@ td:last-child {
   transition: all 0.5s;
 }
 
-/* -------------------------------------------------------------------
- * ## skillbars
- * ------------------------------------------------------------------- */
-.skill-bars {
-  list-style: none;
-  margin: var(--vspace-2) 0 var(--vspace-1);
-}
-
-.skill-bars li {
-  height: 0.4rem;
-  background: var(--color-gray-9);
-  width: 100%;
-  margin-bottom: calc(var(--vspace-2) - 0.4rem);
-  padding: 0;
-  position: relative;
-}
-
-.skill-bars li strong {
-  position: absolute;
-  left: 0;
-  top: calc((var(--vspace-1) * 1.25) * -1);
-  font-family: var(--font-1);
-  font-weight: 600;
-  color: var(--color-text-dark);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: var(--text-xs);
-  line-height: var(--vspace-0_75);
-}
-
-.skill-bars li .progress {
-  background: var(--color-1);
-  position: relative;
-  height: 100%;
-}
-
-.skill-bars li .progress span {
-  display: block;
-  font-family: var(--font-1);
-  color: white;
-  font-size: 1rem;
-  line-height: 1;
-  background: var(--color-black);
-  padding: var(--vspace-0_25);
-  border-radius: 4px;
-  position: absolute;
-  right: 0;
-  top: calc((var(--vspace-1) + 0.8rem) * -1);
-}
-
-.skill-bars li .progress span::after {
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  margin-left: -5px;
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  border-top-color: var(--color-black, var(--color-black));
-  content: '';
-}
-
-.skill-bars li .percent5 {
-  width: 5%;
-}
-
-.skill-bars li .percent10 {
-  width: 10%;
-}
-
-.skill-bars li .percent15 {
-  width: 15%;
-}
-
-.skill-bars li .percent20 {
-  width: 20%;
-}
-
-.skill-bars li .percent25 {
-  width: 25%;
-}
-
-.skill-bars li .percent30 {
-  width: 30%;
-}
-
-.skill-bars li .percent35 {
-  width: 35%;
-}
-
-.skill-bars li .percent40 {
-  width: 40%;
-}
-
-.skill-bars li .percent45 {
-  width: 45%;
-}
-
-.skill-bars li .percent50 {
-  width: 50%;
-}
-
-.skill-bars li .percent55 {
-  width: 55%;
-}
-
-.skill-bars li .percent60 {
-  width: 60%;
-}
-
-.skill-bars li .percent65 {
-  width: 65%;
-}
-
-.skill-bars li .percent70 {
-  width: 70%;
-}
-
-.skill-bars li .percent75 {
-  width: 75%;
-}
-
-.skill-bars li .percent80 {
-  width: 80%;
-}
-
-.skill-bars li .percent85 {
-  width: 85%;
-}
-
-.skill-bars li .percent90 {
-  width: 90%;
-}
-
-.skill-bars li .percent95 {
-  width: 95%;
-}
-
-.skill-bars li .percent100 {
-  width: 100%;
-}
-
 /* --------------------------------------------------------------------
  * ## stats tabs
  * -------------------------------------------------------------------- */
@@ -2809,6 +2675,11 @@ img.u-pull-left {
   transition-property: color, background-color;
 }
 
+html[dir='rtl'] .mobile-home-link a,
+html[dir='rtl'] .main-nav a {
+  letter-spacing: 0;
+}
+
 .mobile-home-link a:focus,
 .mobile-home-link a:hover,
 .main-nav a:focus,
@@ -2980,6 +2851,10 @@ html[dir='rtl'] .main-nav li:last-child {
     letter-spacing: 0;
     padding: var(--vspace-0_5) 2.8rem;
     color: var(--color-text);
+  }
+
+  html[dir='rtl'] .main-nav a {
+    letter-spacing: 0;
   }
 
   .main-nav a:focus,
@@ -3400,6 +3275,10 @@ html[dir='rtl'] .intro-social {
   letter-spacing: 0.2em;
   color: var(--color-text-light);
   margin-top: -0.2rem;
+}
+
+html[dir='rtl'] .timeline__timeframe {
+  letter-spacing: 0;
 }
 
 /* -------------------------------------------------------------------

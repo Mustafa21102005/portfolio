@@ -61,7 +61,7 @@ onUnmounted(() => {
           <p>{{ $t(`work.projects.${project.key}.description`) }}</p>
 
           <ul class="modal-popup__cat">
-            <li v-for="tag in project.tags" :key="tag">{{ tag }}</li>
+            <li v-for="tag in $tm(`work.projects.${project.key}.tags`)" :key="tag">{{ tag }}</li>
           </ul>
         </div>
 

@@ -48,32 +48,37 @@ const english = {
         notenest: {
           title: 'Note-Nest',
           description:
-            'A personal note-taking app built with Vue 3 using the Composition API. Users can create, edit, delete, and organize text notes with tags. Data is persisted locally with Local Storage.',
-          category: 'Website',
+            'Most note apps are overcomplicated — Note-Nest strips it back to what matters. Built with Vue 3, it lets users create, tag, and organize notes instantly, with everything persisted locally so nothing is ever lost.',
+          tags: ['Note-Taking App', 'Offline-First', 'SPA'],
+          category: 'Web App',
         },
         scantrack: {
           title: 'Scan-Track',
           description:
-            'ScanTrack is a web-based attendance management system designed for universities.',
-          category: 'Website',
+            'Manual attendance tracking in universities wastes time and invites errors. ScanTrack replaces the paper process with a scan-based system that records, tracks, and reports attendance automatically.',
+          tags: ['Attendance System', 'University Tool', 'Web App'],
+          category: 'Web App',
         },
         lectura: {
           title: 'Lectura',
           description:
-            'Lectura is a web-based Virtual Learning Environment (VLE) designed to improve how educational institutions manage study materials, assignments, grading, and academic progress.',
-          category: 'Website',
+            'Educational institutions struggle to centralize learning materials, assignments, and grades in one place. Lectura solves this with a full VLE that keeps students, parents, lecturers, and admins on the same page.',
+          tags: ['E-Learning Platform', 'VLE', 'Academic Tool'],
+          category: 'Web App',
         },
         bmh: {
           title: 'Book-My-Hotel',
           description:
-            'Book-My-Hotel is a hotel reservation platform designed to support sustainable tourism by helping customers easily browse, compare, and book eco-friendly hotels.',
-          category: 'Website',
+            "Finding and booking eco-friendly hotels shouldn't be harder than booking any other. Book-My-Hotel makes sustainable tourism accessible by letting customers browse, compare, and reserve green hotels effortlessly.",
+          tags: ['Booking Platform', 'Eco-Tourism', 'Web App'],
+          category: 'Web App',
         },
         maillard: {
           title: 'Maillard',
           description:
-            'A full-featured restaurant reservation web application built using Laravel, with role-based access for Admin and Customers. The system allows customers to reserve tables, receive reservation reminders, manage their profiles, and view a dynamic menu. Admins can manage reservations, tables, users, and menu items.',
-          category: 'Website',
+            'Running a restaurant without a system means lost reservations and unhappy guests. Maillard gives restaurants full control — customers book tables and get reminders, while admins manage reservations, menus, and users from one dashboard.',
+          tags: ['Reservation System', 'Role-Based Access', 'Full Stack'],
+          category: 'Web App',
         },
       },
     },

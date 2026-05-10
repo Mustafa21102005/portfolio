@@ -82,6 +82,22 @@ const english = {
         },
       },
     },
+    certificates: {
+      title: 'Certificates',
+      description:
+        "A collection of courses I've completed to sharpen my craft and stay ahead of the curve.",
+      verify: 'Verify certificate',
+      agile: {
+        issuer: 'Google',
+        name: 'Agile Project Management',
+        date: 'April 2025',
+      },
+      pm: {
+        issuer: 'Google',
+        name: 'Foundations of Project Management',
+        date: 'May 2025',
+      },
+    },
     contact: {
       title: 'Get In Touch',
       description:

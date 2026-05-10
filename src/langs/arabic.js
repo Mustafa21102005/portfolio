@@ -82,6 +82,21 @@ const arabic = {
         },
       },
     },
+    certificates: {
+      title: 'الشهادات',
+      description: 'دورات أكملتها لأطوّر نفسي وأواكب كل جديد في المجال.',
+      verify: 'التحقق من الشهادة',
+      agile: {
+        issuer: 'جوجل',
+        name: 'إدارة المشاريع بمنهجية أجايل',
+        date: 'أبريل 2025',
+      },
+      pm: {
+        issuer: 'جوجل',
+        name: 'أساسيات إدارة المشاريع',
+        date: 'مايو 2025',
+      },
+    },
     contact: {
       title: 'تواصل معي',
       description:

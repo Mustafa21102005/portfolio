@@ -14,7 +14,7 @@
           <p class="cv-split__hint">{{ $t('about.cv') }}</p>
           <div class="cv-split">
             <a
-              href="https://drive.google.com/file/d/1BcTTYmLyuZTuMii_YGugOfCxRKfbpa--/view"
+              href="https://drive.google.com/file/d/1A4dHdfUMRXNmGUa5PIL9fgOy7Ud9tkP2/view"
               class="btn cv-split__btn cv-split__btn--left"
               target="_blank"
               aria-label="Download CV in English"
@@ -22,7 +22,7 @@
               English
             </a>
             <a
-              href="https://drive.google.com/file/d/1Bp_EGaCgLyLPQRijJN25rOf5gqd2AfA8/view"
+              href="https://drive.google.com/file/d/1MYDJGfyhu3bxu5AWVRJ2AEkmwfYi_2rf/view"
               class="btn cv-split__btn cv-split__btn--right"
               target="_blank"
               aria-label="تحميل السيرة الذاتية باللغة العربية"
@@ -47,9 +47,11 @@
           <br />
           <li>JavaScript & jQuery & Vue.js</li>
           <br />
-          <li>MySQL & Database Design</li>
+          <li>MySQL & PostgreSQL</li>
           <br />
           <li>Bootstrap & Tailwind CSS</li>
+          <br />
+          <li>PHPUnit & PEST</li>
           <br />
           <li>Agile & Problem Solving</li>
           <br />

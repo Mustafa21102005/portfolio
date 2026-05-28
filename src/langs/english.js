@@ -43,7 +43,8 @@ const english = {
       description:
         'A curated set of projects demonstrating my experience across full stack web development.',
       projects: {
-        link: 'Project link',
+        link: 'Github link',
+        demo: 'Project demo',
         close: 'Close',
         notenest: {
           title: 'Note-Nest',
@@ -78,6 +79,13 @@ const english = {
           description:
             'Running a restaurant without a system means lost reservations and unhappy guests. Maillard gives restaurants full control — customers book tables and get reminders, while admins manage reservations, menus, and users from one dashboard.',
           tags: ['Reservation System', 'Role-Based Access', 'Full Stack'],
+          category: 'Web App',
+        },
+        fakegen: {
+          title: 'FakeGen',
+          description:
+            'Developers waste time setting up dummy data pipelines just to test basic features. FakeGen cuts through that — generate realistic names, emails, and phone numbers instantly, then copy or download the results as JSON with zero signups or tracking.',
+          tags: ['Fake Data Generator', 'Developer Tool', 'Zero Config'],
           category: 'Web App',
         },
       },

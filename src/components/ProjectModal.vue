@@ -65,14 +65,25 @@ onUnmounted(() => {
           </ul>
         </div>
 
-        <a
-          :href="project.link"
-          class="modal-popup__details"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ $t(`work.projects.link`) }}
-        </a>
+        <div class="modal-popup__actions">
+          <a
+            :href="project.link"
+            class="modal-popup__details--link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $t('work.projects.link') }}
+          </a>
+          <a
+            v-if="project.demo"
+            :href="project.demo"
+            class="modal-popup__details--demo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $t('work.projects.demo') }}
+          </a>
+        </div>
       </div>
     </div>
   </Transition>
@@ -130,5 +141,11 @@ onUnmounted(() => {
 .modal-leave-to .modal-popup {
   transform: scale(0.96);
   opacity: 0;
+}
+
+.modal-popup__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 </style>

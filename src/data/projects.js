@@ -29,4 +29,11 @@ export const projects = [
     image: '/images/maillard.png',
     link: 'https://github.com/Mustafa21102005/restaurant-reservation-system',
   },
+  {
+    id: 6,
+    key: 'fakegen',
+    image: '/images/fakegen.png',
+    link: 'https://github.com/Mustafa21102005/FakeGen',
+    demo: 'https://fakegen.infinityfreeapp.com/',
+  },
 ]

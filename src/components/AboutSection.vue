@@ -285,4 +285,12 @@ html[dir='rtl'] .cv-split__btn + .cv-split__btn {
 .timeline__cert-link:hover svg {
   transform: scale(1.2);
 }
+
+[dir='rtl'] .timeline__cert-link svg {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .timeline__cert-link:hover svg {
+  transform: scaleX(-1) scale(1.2);
+}
 </style>

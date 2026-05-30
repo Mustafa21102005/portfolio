@@ -68,8 +68,32 @@
           <div class="timeline__block">
             <div class="timeline__bullet"></div>
             <div>
-              <h4 class="timeline__title">ABC Horizon Academy</h4>
-              <h5 class="timeline__meta">{{ $t('about.subsidiary') }}</h5>
+              <h4 class="timeline__title">
+                <a href="https://abchorizon.com/" target="_blank" rel="noopener noreferrer">
+                  ABC Horizon Academy
+                </a>
+              </h4>
+              <h5 class="timeline__meta">
+                <a
+                  class="timeline__cert-link"
+                  href="https://drive.google.com/file/d/1oomJzQUuCqt3INNkZHIgUemTg1qxB4q5/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ $t('about.subsidiary') }}
+                  <svg
+                    fill="#FFF"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 1000 1000"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M790 790H208V208h291v-83H208q-35 0-59 24.5T125 208v582q0 35 24 59t59 24h582q35 0 59-24t24-59V499h-83v291zM582 125v83h150L323 617l58 58 409-408v149h83V125H582z"
+                    />
+                  </svg>
+                </a>
+              </h5>
               <p class="timeline__timeframe">{{ $t('about.subsidiary_date') }}</p>
             </div>
             <div>
@@ -82,8 +106,32 @@
           <div class="timeline__block">
             <div class="timeline__bullet"></div>
             <div>
-              <h4 class="timeline__title">ABC Horizon Academy</h4>
-              <h5 class="timeline__meta">{{ $t('about.diploma') }}</h5>
+              <h4 class="timeline__title">
+                <a href="https://abchorizon.com/" target="_blank" rel="noopener noreferrer">
+                  ABC Horizon Academy
+                </a>
+              </h4>
+              <h5 class="timeline__meta">
+                <a
+                  class="timeline__cert-link"
+                  href="https://drive.google.com/file/d/1EgkAFslY2KaYqkjZy2wOQ_7oVxW31bD4/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ $t('about.diploma') }}
+                  <svg
+                    fill="#FFF"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 1000 1000"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M790 790H208V208h291v-83H208q-35 0-59 24.5T125 208v582q0 35 24 59t59 24h582q35 0 59-24t24-59V499h-83v291zM582 125v83h150L323 617l58 58 409-408v149h83V125H582z"
+                    />
+                  </svg>
+                </a>
+              </h5>
               <p class="timeline__timeframe">{{ $t('about.diploma_date') }}</p>
             </div>
             <div>
@@ -97,12 +145,38 @@
             <div class="timeline__bullet"></div>
             <div>
               <h4 class="timeline__title">
-                University of Bolton
+                <a
+                  href="https://greatermanchester.ac.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  University of Bolton
+                </a>
                 <small class="timeline__note">
                   {{ $t('about.university_transition') }}
                 </small>
               </h4>
-              <h5 class="timeline__meta">{{ $t('about.bachelor') }}</h5>
+              <h5 class="timeline__meta">
+                <a
+                  class="timeline__cert-link"
+                  href="https://drive.google.com/file/d/1bJOBjKa8QUoGtukN4PmG6XzIyvcM-qT0/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ $t('about.bachelor') }}
+                  <svg
+                    fill="#FFF"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 1000 1000"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M790 790H208V208h291v-83H208q-35 0-59 24.5T125 208v582q0 35 24 59t59 24h582q35 0 59-24t24-59V499h-83v291zM582 125v83h150L323 617l58 58 409-408v149h83V125H582z"
+                    />
+                  </svg>
+                </a>
+              </h5>
               <p class="timeline__timeframe">{{ $t('about.bachelor_date') }}</p>
             </div>
             <div>
@@ -191,5 +265,24 @@ html[dir='rtl'] .cv-split__btn + .cv-split__btn {
 
 .cv-split__btn:hover {
   filter: brightness(1.1);
+}
+
+.timeline__cert-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.timeline__cert-link:hover {
+  opacity: 0.7;
+}
+
+.timeline__cert-link svg {
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+.timeline__cert-link:hover svg {
+  transform: scale(1.2);
 }
 </style>

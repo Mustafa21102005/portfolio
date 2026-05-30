@@ -4,6 +4,7 @@ export const projects = [
     key: 'notenest',
     image: '/images/note-nest.png',
     link: 'https://github.com/Mustafa21102005/note-nest',
+    demo: 'https://mustafa21102005.github.io/note-nest/',
   },
   {
     id: 2,

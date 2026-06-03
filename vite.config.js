@@ -6,14 +6,17 @@ import VitePrerender from 'vite-plugin-prerender'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     VitePrerender({
       staticDir: path.join(__dirname, 'dist'),
-
       routes: ['/'],
+
+      rendererOptions: {
+        renderAfterDocumentEvent: 'custom-render-trigger',
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      },
     }),
   ],
   resolve: {

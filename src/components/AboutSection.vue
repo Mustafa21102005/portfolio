@@ -18,6 +18,7 @@
               class="btn cv-split__btn cv-split__btn--left"
               target="_blank"
               aria-label="Download CV in English"
+              rel="noopener noreferrer"
             >
               English
             </a>
@@ -26,6 +27,7 @@
               class="btn cv-split__btn cv-split__btn--right"
               target="_blank"
               aria-label="تحميل السيرة الذاتية باللغة العربية"
+              rel="noopener noreferrer"
             >
               عربي
             </a>
@@ -94,7 +96,11 @@
                   </svg>
                 </a>
               </h5>
-              <p class="timeline__timeframe">{{ $t('about.subsidiary_date') }}</p>
+              <p class="timeline__timeframe">
+                <time datetime="2022-12">{{ $t('about.subsidiary_start_date') }}</time>
+                –
+                <time datetime="2023-06">{{ $t('about.subsidiary_end_date') }}</time>
+              </p>
             </div>
             <div>
               <p>
@@ -132,7 +138,11 @@
                   </svg>
                 </a>
               </h5>
-              <p class="timeline__timeframe">{{ $t('about.diploma_date') }}</p>
+              <p class="timeline__timeframe">
+                <time datetime="2023-09">{{ $t('about.diploma_start_date') }}</time>
+                –
+                <time datetime="2025-01">{{ $t('about.diploma_end_date') }}</time>
+              </p>
             </div>
             <div>
               <p>
@@ -177,7 +187,11 @@
                   </svg>
                 </a>
               </h5>
-              <p class="timeline__timeframe">{{ $t('about.bachelor_date') }}</p>
+              <p class="timeline__timeframe">
+                <time datetime="2025-06">{{ $t('about.bachelor_start_date') }}</time>
+                –
+                <time datetime="2025-12">{{ $t('about.bachelor_end_date') }}</time>
+              </p>
             </div>
             <div>
               <p>

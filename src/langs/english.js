@@ -25,16 +25,19 @@ const english = {
       expertise: 'Expertise',
       education: 'Education',
       subsidiary: 'International Level 3 Subsidiary Diploma',
-      subsidiary_date: 'December 2022 - June 2023',
+      subsidiary_start_date: 'December 2022',
+      subsidiary_end_date: 'June 2023',
       subsidiary_description:
         'Completed a Pearson BTEC Level 3 Diploma in Applied Science, an internationally recognized qualification equivalent to a high school diploma. The program provided a strong foundation in applied scientific principles, covering biology, chemistry, and physics.',
       diploma: 'Level 5 Higher National Diploma',
-      diploma_date: 'September 2023 - January 2025',
+      diploma_start_date: 'September 2023',
+      diploma_end_date: 'January 2025',
       diploma_description:
         'Studied Software Engineering with a focus on modern software development principles and practices. The program emphasized problem-solving, programming fundamentals, system design, and the development of scalable applications.',
       university_transition: '(Transitioned to University of Greater Manchester)',
       bachelor: 'Software Engineering BEng (Hons) HE6 top-up',
-      bachelor_date: 'June 2025 - December 2025',
+      bachelor_start_date: 'June 2025',
+      bachelor_end_date: 'December 2025',
       bachelor_description:
         'Completed a BEng (Hons) in Software Engineering (HE6 top-up), building upon prior HND-level studies. The program focused on advanced software development, system design, and engineering principles required to build and maintain large-scale software systems.',
     },
@@ -99,11 +102,13 @@ const english = {
         issuer: 'Google',
         name: 'Agile Project Management',
         date: 'April 2025',
+        datetime: '2025-04',
       },
       pm: {
         issuer: 'Google',
         name: 'Foundations of Project Management',
         date: 'May 2025',
+        datetime: '2025-05',
       },
     },
     contact: {

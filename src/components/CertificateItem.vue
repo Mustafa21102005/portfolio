@@ -29,7 +29,9 @@ defineProps({
       <span class="cert-item__name">{{ $t(`certificates.${certificate.key}.name`) }}</span>
       <span class="cert-item__sub">
         {{ $t(`certificates.${certificate.key}.issuer`) }} ·
-        {{ $t(`certificates.${certificate.key}.date`) }}
+        <time :datetime="certificate.datetime">
+          {{ $t(`certificates.${certificate.key}.date`) }}
+        </time>
       </span>
     </div>
 

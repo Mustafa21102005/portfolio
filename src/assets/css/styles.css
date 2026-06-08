@@ -482,6 +482,10 @@ summary {
   display: list-item;
 }
 
+address {
+  font-style: normal;
+}
+
 template {
   display: none;
 }
@@ -1540,21 +1544,13 @@ del {
   text-decoration: line-through;
 }
 
-abbr {
-  font-family: var(--font-1);
-  font-weight: 600;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  letter-spacing: 0.1em;
-}
-
 html[dir='rtl'] abbr {
   letter-spacing: 0;
 }
 
 abbr[title],
 dfn[title] {
-  border-bottom: 1px dotted;
+  border-bottom: 1.7px dashed var(--color-info);
   cursor: help;
   text-decoration: none;
 }

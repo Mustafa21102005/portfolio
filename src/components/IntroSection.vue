@@ -13,13 +13,23 @@
 
       <ul class="intro-social">
         <li>
-          <a href="https://github.com/Mustafa21102005" target="_blank">Github</a>
+          <a href="https://github.com/Mustafa21102005" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
         </li>
         <li>
-          <a href="https://wa.me/966545117570" target="_blank">WhatsApp</a>
+          <a href="https://wa.me/966545117570" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mustafa-azmi-3718463a2/" target="_blank">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/mustafa-azmi-3718463a2/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
       </ul>
     </div>

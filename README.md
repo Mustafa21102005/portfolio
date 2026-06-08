@@ -30,7 +30,6 @@ Explore the portfolio directly in your browser.
 - **Vite**
 - **JavaScript (ES6+)**
 - **HTML5 & CSS3**
-- **Intersection Observer API**
 - **Netlify** (deployment)
 
 ---
@@ -46,13 +45,13 @@ git clone https://github.com/Mustafa21102005/portfolio.git
 ### 2. Install Dependencies
 
 ```
-npm install
+pnpm i
 ```
 
 ### 3. Run The Development Server
 
 ```
-npm run dev
+pnpm dev
 ```
 
 ### 🎉 You're Ready to Go!

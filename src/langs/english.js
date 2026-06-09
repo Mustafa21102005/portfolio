@@ -24,11 +24,6 @@ const english = {
       cv: 'Want my CV? Pick your language 😉',
       expertise: 'Expertise',
       education: 'Education',
-      subsidiary: 'International Level 3 Subsidiary Diploma',
-      subsidiary_start_date: 'December 2022',
-      subsidiary_end_date: 'June 2023',
-      subsidiary_description:
-        'Completed a Pearson BTEC Level 3 Diploma in Applied Science, an internationally recognized qualification equivalent to a high school diploma. The program provided a strong foundation in applied scientific principles, covering biology, chemistry, and physics.',
       diploma: 'Level 5 Higher National Diploma',
       diploma_start_date: 'September 2023',
       diploma_end_date: 'January 2025',
@@ -101,12 +96,16 @@ const english = {
       agile: {
         issuer: 'Google',
         name: 'Agile Project Management',
+        description:
+          'Completed a course on Agile Project Management, covering Scrum frameworks, sprint planning, backlog management, and coaching Agile teams.',
         date: 'April 2025',
         datetime: '2025-04',
       },
       pm: {
         issuer: 'Google',
         name: 'Foundations of Project Management',
+        description:
+          'Completed a course on Project Management fundamentals, covering the project life cycle, Agile and Waterfall methodologies, organizational structure, and change management.',
         date: 'May 2025',
         datetime: '2025-05',
       },

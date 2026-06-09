@@ -33,6 +33,7 @@ defineProps({
           {{ $t(`certificates.${certificate.key}.date`) }}
         </time>
       </span>
+      <span class="cert-item__desc">{{ $t(`certificates.${certificate.key}.description`) }}</span>
     </div>
 
     <a class="cert-item__link" :href="certificate.verify" target="_blank" rel="noopener noreferrer">
@@ -94,7 +95,13 @@ defineProps({
 
 .cert-item__sub {
   font-size: 1.3rem;
-  color: var(--color-text-light);
+  color: var(--color-white);
+}
+
+.cert-item__desc {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-top: 2px;
 }
 
 .cert-item__link {

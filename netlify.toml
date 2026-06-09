@@ -1,5 +1,6 @@
 [build]
-command = "pnpm run build"
+# Tell pnpm to allow puppeteer to run its download scripts, then build
+command = "pnpm config set only-built-dependencies puppeteer && pnpm run build"
 publish = "dist"
 
 [build.environment]

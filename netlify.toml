@@ -1,0 +1,9 @@
+[build]
+command = "pnpm run build"
+publish = "dist"
+
+[build.environment]
+# Force Netlify to download the Chrome browser binary during the build
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = "false"
+# Cache the repo folder so Netlify remembers it for next time
+PUPPETEER_CACHE_DIR = "/opt/build/repo/.netlify/plugins/node_modules/puppeteer"

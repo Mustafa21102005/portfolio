@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
+    "@prerenderer/renderer-puppeteer": "^1.2.4",
+    "@prerenderer/rollup-plugin": "^0.3.12",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vue/eslint-config-prettier": "^10.2.0",
     "eslint": "^9.39.4",

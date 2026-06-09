@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted } from 'vue'
 import AboutSection from './components/AboutSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import AppFooter from './components/layout/AppFooter.vue'
@@ -7,6 +8,10 @@ import ProjectSection from './components/ProjectsSection.vue'
 import IntroSection from './components/IntroSection.vue'
 import LanguageSwitcherFab from './components/LanguageSwitcherFab.vue'
 import CertificatesSection from './components/CertificatesSection.vue'
+
+onMounted(() => {
+  document.dispatchEvent(new Event('custom-render-trigger'))
+})
 </script>
 
 <template>

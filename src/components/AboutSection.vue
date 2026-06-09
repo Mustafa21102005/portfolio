@@ -43,17 +43,13 @@
         <ul class="skills-list h1">
           <li>Full Stack Web Development</li>
           <br />
-          <li>Figma & UI/UX Design</li>
-          <br />
           <li>Laravel & PHP</li>
           <br />
-          <li>JavaScript & jQuery & Vue.js</li>
+          <li>Typescript & Vue.js</li>
           <br />
           <li>MySQL & PostgreSQL</li>
           <br />
           <li>Bootstrap & Tailwind CSS</li>
-          <br />
-          <li>PHPUnit & PEST</li>
           <br />
           <li>Agile & Problem Solving</li>
           <br />
@@ -67,48 +63,6 @@
         <h2 class="text-pretitle">{{ $t('about.education') }}</h2>
 
         <div class="timeline">
-          <div class="timeline__block">
-            <div class="timeline__bullet"></div>
-            <div>
-              <h4 class="timeline__title">
-                <a href="https://abchorizon.com/" target="_blank" rel="noopener noreferrer">
-                  ABC Horizon Academy
-                </a>
-              </h4>
-              <h5 class="timeline__meta">
-                <a
-                  class="timeline__cert-link"
-                  href="https://drive.google.com/file/d/1oomJzQUuCqt3INNkZHIgUemTg1qxB4q5/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {{ $t('about.subsidiary') }}
-                  <svg
-                    fill="#FFF"
-                    width="18px"
-                    height="18px"
-                    viewBox="0 0 1000 1000"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M790 790H208V208h291v-83H208q-35 0-59 24.5T125 208v582q0 35 24 59t59 24h582q35 0 59-24t24-59V499h-83v291zM582 125v83h150L323 617l58 58 409-408v149h83V125H582z"
-                    />
-                  </svg>
-                </a>
-              </h5>
-              <p class="timeline__timeframe">
-                <time datetime="2022-12">{{ $t('about.subsidiary_start_date') }}</time>
-                –
-                <time datetime="2023-06">{{ $t('about.subsidiary_end_date') }}</time>
-              </p>
-            </div>
-            <div>
-              <p>
-                {{ $t('about.subsidiary_description') }}
-              </p>
-            </div>
-          </div>
-
           <div class="timeline__block">
             <div class="timeline__bullet"></div>
             <div>

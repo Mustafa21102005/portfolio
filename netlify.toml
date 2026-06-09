@@ -1,6 +1,6 @@
 [build]
-# This manually triggers the Chrome download right before running the Vite build
-command = "pnpm exec puppeteer browsers install chrome && pnpm run build"
+# Using npx lets us call the puppeteer CLI utility cleanly without missing paths
+command = "npx puppeteer browsers install chrome && pnpm run build"
 publish = "dist"
 
 [build.environment]

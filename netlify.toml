@@ -1,6 +1,6 @@
 [build]
-# Using npx lets us call the puppeteer CLI utility cleanly without missing paths
-command = "npx puppeteer browsers install chrome && pnpm run build"
+# Force pnpm to execute the standalone puppeteer installer tool
+command = "pnpm --package=puppeteer dlx puppeteer browsers install chrome && pnpm run build"
 publish = "dist"
 
 [build.environment]

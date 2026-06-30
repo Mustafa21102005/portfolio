@@ -1,5 +1,5 @@
 <script setup>
-import { watch, onUnmounted } from 'vue'
+import { useModalEscape } from '@/composables/useModalEscape'
 
 const props = defineProps({
   project: Object,
@@ -8,29 +8,10 @@ const props = defineProps({
 
 const emit = defineEmits(['close'])
 
-const handleEsc = (e) => {
-  if (e.key === 'Escape') {
-    emit('close')
-  }
-}
-
-watch(
+useModalEscape(
   () => props.open,
-  (isOpen) => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-      document.addEventListener('keydown', handleEsc)
-    } else {
-      document.body.style.overflow = ''
-      document.removeEventListener('keydown', handleEsc)
-    }
-  },
-  { immediate: true },
+  () => emit('close'),
 )
-
-onUnmounted(() => {
-  document.removeEventListener('keydown', handleEsc)
-})
 </script>
 
 <template>
@@ -103,17 +84,8 @@ onUnmounted(() => {
 }
 
 .modal-close {
-  position: absolute;
   inset-block-start: 4rem;
   inset-inline-end: 5rem;
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-.modal-close img {
-  width: 24px;
-  height: 24px;
 }
 
 .modal-enter-active,

@@ -1,6 +1,6 @@
 [build]
 # Force pnpm to execute the standalone puppeteer installer tool
-command = "pnpm --package=puppeteer dlx puppeteer browsers install chrome && pnpm run build"
+command = "pnpm --package=puppeteer@25.1.0 dlx puppeteer browsers install chrome && pnpm run build"
 publish = "dist"
 
 [build.environment]

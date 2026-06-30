@@ -1,5 +1,12 @@
 <script setup>
+import { inject } from 'vue'
+
 const year = new Date().getFullYear()
+const cookieBanner = inject('cookieBanner')
+
+function openCookieSettings() {
+  cookieBanner?.value?.show()
+}
 </script>
 
 <template>
@@ -9,9 +16,14 @@ const year = new Date().getFullYear()
         <span>{{ $t('footer.copyright') }} {{ year }}</span>
         <span>
           {{ $t('footer.design') }}
-          <a href="https://www.styleshout.com" target="_blank">
-            {{ $t('footer.styleshout') }}
+          <a href="https://www.styleshout.com" target="_blank" rel="noopener noreferrer">
+            StyleShout
           </a>
+        </span>
+        <span>
+          <button type="button" class="cookie-settings-link" @click="openCookieSettings">
+            {{ $t('footer.cookieSettings') }}
+          </button>
         </span>
       </div>
 
@@ -32,3 +44,18 @@ const year = new Date().getFullYear()
     </div>
   </footer>
 </template>
+
+<style scoped>
+.cookie-settings-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.cookie-settings-link:hover {
+  opacity: 1;
+}
+</style>

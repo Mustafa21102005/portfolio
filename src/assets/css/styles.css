@@ -299,6 +299,36 @@
   }
 }
 
+/* ===================================================================
+ * # SCROLLBAR
+ *
+ * ------------------------------------------------------------------- */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-10);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-9);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-1-dark);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-9) var(--color-gray-10);
+}
+
 /* ====================================================================
  * # NORMALIZE
  *
@@ -2008,7 +2038,6 @@ input[type='button'] {
   font-weight: 600;
   font-size: var(--text-xs);
   text-transform: uppercase;
-  letter-spacing: 0.35em;
   height: var(--btn-height);
   line-height: calc(var(--btn-height) - 2px);
   padding: 0 3.6rem;
@@ -3269,7 +3298,6 @@ html[dir='rtl'] .intro-social {
   line-height: var(--vspace-0_75);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--color-text-light);
   margin-top: -0.2rem;
 }
 
@@ -3645,6 +3673,20 @@ html[dir='rtl'] .timeline__timeframe {
   color: white;
 }
 
+.modal-close {
+  position: absolute;
+  inset-block-start: 3rem;
+  inset-inline-end: 2rem;
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+}
+
+.modal-close img {
+  width: 24px;
+  height: 24px;
+}
+
 /* -------------------------------------------------------------------
  * responsive:
  * works
@@ -3798,12 +3840,12 @@ html[dir='rtl'] .timeline__timeframe {
 }
 
 .contact-social li::after {
-  content: ',';
-  margin-right: 0.6rem;
+  content: none;
 }
 
-.contact-social li:last-child::after {
-  display: none;
+.contact-social li:not(:first-child)::before {
+  content: '\002C\0020';
+  unicode-bidi: plaintext;
 }
 
 .contact-btn {
@@ -3862,6 +3904,8 @@ html[dir='rtl'] .timeline__timeframe {
   margin-top: calc(var(--vspace-0_25) * -1);
   inset-inline-end: 5.2rem;
   line-height: var(--vspace-0_875);
+  padding-inline-end: 9rem;
+  color: #fff;
 }
 
 .ss-copyright span {
@@ -3872,7 +3916,7 @@ html[dir='rtl'] .timeline__timeframe {
 .ss-copyright span::after {
   content: '|';
   display: inline-block;
-  padding: 0 0.8rem 0 1rem;
+  padding: 0 1rem;
   color: rgba(255, 255, 255, 0.1);
 }
 

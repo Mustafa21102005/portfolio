@@ -121,7 +121,31 @@ const english = {
       copyright: '© Copyright Mustafa Azmi',
       backtotop: 'Back to Top',
       design: 'Design by',
-      styleshout: 'StyleShout',
+      cookieSettings: 'Cookie settings',
+    },
+    cookie: {
+      text: "This site uses cookies to understand how visitors use it (via Microsoft Clarity). We don't collect any personal data without your permission.",
+      learnMore: 'Learn more',
+      decline: 'Decline',
+      accept: 'Accept',
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      close: 'Close',
+      intro:
+        'This is a personal portfolio site. Below is a simple summary of the data practices used here.',
+      analyticsTitle: 'Analytics',
+      analyticsText:
+        "This site uses Microsoft Clarity to understand how visitors browse and interact with it, such as clicks and scrolling. Clarity only starts collecting this data after you accept cookies in the banner, and it anonymizes sensitive information automatically. You can read Microsoft's own Clarity privacy details for more technical depth.",
+      fontsTitle: 'Fonts',
+      fontsText:
+        'This site loads fonts from Google Fonts, which may receive your IP address when fonts are loaded.',
+      searchConsoleTitle: 'Search Visibility',
+      searchConsoleText:
+        'This site is verified with Google Search Console to monitor search performance. This does not track your behavior on this site directly.',
+      contactTitle: 'Questions',
+      contactText:
+        'If you have any questions about how your data is handled, feel free to reach out at',
     },
   },
 }

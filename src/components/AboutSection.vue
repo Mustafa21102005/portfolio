@@ -14,7 +14,7 @@
           <p class="cv-split__hint">{{ $t('about.cv') }}</p>
           <div class="cv-split">
             <a
-              href="https://drive.google.com/file/d/1h2EYa0lOVE7ps6TYUk3TnRVtRrmE9xNa/view"
+              href="https://drive.google.com/file/d/18Qn0jmld0uIj9-DJztuV7GfPXNpzT3z4/view"
               class="btn cv-split__btn cv-split__btn--left"
               target="_blank"
               aria-label="Download CV in English"
@@ -23,7 +23,7 @@
               English
             </a>
             <a
-              href="https://drive.google.com/file/d/1gD-nqRDIIEG5-x5ugOfHhBqxcpXN61i8/view"
+              href="https://drive.google.com/file/d/1UQholH5_kfSo_OqKSjJvIJr85RZWFH_W/view"
               class="btn cv-split__btn cv-split__btn--right"
               target="_blank"
               aria-label="تحميل السيرة الذاتية باللغة العربية"

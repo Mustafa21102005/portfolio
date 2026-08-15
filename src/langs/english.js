@@ -86,6 +86,13 @@ const english = {
           tags: ['Fake Data Generator', 'Developer Tool', 'Zero Config'],
           category: 'Web App',
         },
+        checkin: {
+          title: 'Laravel Checkin',
+          description:
+            'Every project reinvents attendance tracking from scratch, usually with the same security gaps — reusable codes, no expiry, no protection against duplicate scans. Laravel Checkin solves this once: an open-source package that issues signed, single-use, time-limited check-in tokens for any Eloquent model, published on Packagist and verified with automated tests across every supported PHP and Laravel version.',
+          tags: ['Laravel Package', 'Open Source', 'Composer'],
+          category: 'Open Source Package',
+        },
       },
     },
     certificates: {

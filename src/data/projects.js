@@ -37,4 +37,11 @@ export const projects = [
     link: 'https://github.com/Mustafa21102005/FakeGen',
     demo: 'https://fakegen.infinityfreeapp.com/',
   },
+  {
+    id: 7,
+    key: 'checkin',
+    image: '/images/laravel-checkin.png',
+    link: 'https://github.com/Mustafa21102005/laravel-checkin',
+    demo: 'https://laravel-checkin.alwaysdata.net/',
+  },
 ]
